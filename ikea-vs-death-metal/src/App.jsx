@@ -1,10 +1,11 @@
+import "./app.css"
 import {Routes, Route, useNavigate} from "react-router-dom"
 import Home from "./pages/home"
 import Game from "./pages/game"
-import IkeaCorrect from "./pages/IkeaCorrect"
-import IkeaFail from "./pages/IkeaFail"
-import BandCorrect from "./pages/BandCorrect"
-import BandFail from "./pages/BandFail"
+import IkeaCorrect from "./pages/ikeaCorrect"
+import IkeaFail from "./pages/ikeaFail"
+import BandFail from "./pages/bandFail"
+import BandCorrect from "./pages/bandCorrect"
 
 function App() {
     return (
@@ -14,8 +15,8 @@ function App() {
             <Route path="/game" element={<Game />} />
             <Route path="/ikeaCorrect" element={<IkeaCorrect />} />
             <Route path="/ikeaFail" element={<IkeaFail />} />
-            <Route path="/BandCorrect" element={<BandCorrect />} />
-            <Route path="/BandFail" element={<BandFail />} />
+            <Route path="/bandFail" element={<BandFail />} />
+            <Route path="/bandCorrect" element={<BandCorrect />} />
           </Routes>
       </div>
     )

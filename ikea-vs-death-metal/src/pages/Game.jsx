@@ -20,7 +20,11 @@ export default function Game() {
     const navigate = useNavigate()
 
     const handleIkeaBag = () => {
-      oneObject.band ? navigate("./IkeaFail") : navigate("./IkeaCorrect")
+      oneObject.band ? navigate("/bandFail") : navigate("/ikeaCorrect")
+    }
+
+    const handleMetalBtn = () => {
+      oneObject.band ? navigate("/bandCorrect") : navigate("/ikeaFail")
     }
 
     return (
@@ -29,7 +33,7 @@ export default function Game() {
           <button onClick={handleIkeaBag}>
             <img src="/images/71cQiE5yR2L._AC_SL1239_.jpg" alt="" width ="200"/>
           </button>
-          <button>
+          <button onClick={handleMetalBtn}>
             <img src="/images/b7f4b4b8-06f9-4ee9-bebf-15ed222e19e9.jpg" alt="" width ="200"/>
           </button>
 
