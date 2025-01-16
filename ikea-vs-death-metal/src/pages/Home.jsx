@@ -6,7 +6,6 @@ export default function Home() {
 
     const handleStartGame = () => {
       navigate("/game")
-      // console.log("button working")
     }
 
     return (
@@ -14,7 +13,7 @@ export default function Home() {
                <h1>Ikea vs Death Metal</h1>
                <div className="button-start">
                  <button onClick={handleStartGame}>
-                   Start Gameefj
+                   Start Game
                  </button>
                 <p>
                     If you dare to...
