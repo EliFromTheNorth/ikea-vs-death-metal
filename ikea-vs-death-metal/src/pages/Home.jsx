@@ -16,7 +16,7 @@ export default function Home() {
                    Start Game
                  </button>
                 <p>
-                    If you dare to...
+                    If you dare to!
                 </p>               
                </div>
         </>
