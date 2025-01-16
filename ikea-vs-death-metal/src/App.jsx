@@ -1,17 +1,15 @@
+import {Routes, Route, useNavigate} from "react-router-dom"
+import Home from "./pages/home"
+import Game from "./pages/game"
+
 function App() {
-  
     return (
-      <>
-        <h1>Ikea vs Death Metal</h1>
-        <div className="button-start">
-          <button>
-            Start Game
-          </button>
-          <p>
-            If you dare to.
-          </p>
-        </div>
-      </>
+      <div>
+          <Routes>
+            <Route path ="/" element={<Home />}/>
+            <Route path="/game" element={<Game />} />
+          </Routes>
+      </div>
     )
   }
   
