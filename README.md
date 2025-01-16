@@ -5,4 +5,4 @@ A guessing game where players test their knowledge by deciding if a given name b
 
 (Yes, design isn’t the priority here :D)
 
-![image alt](https://github.com/EliFromTheNorth/ikea-vs-death-metal/blob/master/ikea-vs-death-metal/src/assets/images/Figma.jpg)
+![image alt](https://github.com/EliFromTheNorth/ikea-vs-death-metal/blob/master/ikea-vs-death-metal/public/images/Figma.jpg)
