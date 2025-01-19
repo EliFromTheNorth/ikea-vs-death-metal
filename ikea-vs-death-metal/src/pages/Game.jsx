@@ -1,15 +1,6 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate, useLocation } from "react-router-dom"
 import { useState, useEffect } from "react"
-import data from "../data/data"
 
-function shuffleArray(arr) {
-  const shuffledArray = [...arr];
-  for (let i = shuffledArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
-  }
-  return shuffledArray;
-}
 
 console.log("hello")
 
@@ -17,29 +8,16 @@ console.log("hello")
 export default function Game() {
 
   const navigate = useNavigate()
-  // console.log(data)
-
-    // const names = data.map(item => item)
-    // console.log(names)
-
-    // const guess = names[Math.floor(Math.random() * names.length)]
-    // console.log(guess)
-
-    // const lala = Math.floor(Math.random() * data.length)
-    // console.log(lala)
+  const location = useLocation()
+    const {shuffledData} = location.state || {}
 
 
-    
-    const newDataArray = shuffleArray(data)
-
-    console.log("shuffled array is: ", newDataArray)
-
-    const [remainingItems, setRemainingItems] = useState(() => shuffleArray(data))
+    const [remainingItems, setRemainingItems] = useState(shuffledData || [])
 
     console.log("remainingItems are:", remainingItems)
 
     
-    const [currentItem, setCurrentItem] = useState(remainingItems[0])
+    const [currentItem, setCurrentItem] = useState(remainingItems[0] || null)
 
     console.log("currentItem are: ", currentItem)
 
@@ -73,11 +51,11 @@ export default function Game() {
     
     
     const handleIkeaBag = () => {
-      currentItem.band ? navigate("/bandFail") : navigate("/ikeaCorrect")
+      currentItem.band ? navigate("/bandFail" , { state: { remainingItems, currentItem } }) : navigate("/ikeaCorrect", { state: { remainingItems, currentItem } })
     }
     
     const handleMetalBtn = () => {
-      currentItem.band ? navigate("/bandCorrect") : navigate("/ikeaFail")
+      currentItem.band ? navigate("/bandCorrect", { state: { remainingItems, currentItem } }) : navigate("/ikeaFail", { state: { remainingItems, currentItem } })
     }
     
     // const updatedItems = remainingItems.slice(1)

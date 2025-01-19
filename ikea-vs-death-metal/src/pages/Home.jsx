@@ -1,11 +1,24 @@
 import {useNavigate} from "react-router-dom"
+import data from "../data/data"
+
+
+function shuffleArray(arr) {
+  const shuffledArray = [...arr];
+  for (let i = shuffledArray.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffledArray[i], shuffledArray[j]] = [shuffledArray[j], shuffledArray[i]];
+  }
+  return shuffledArray;
+}
+
 
 
 export default function Home() {
-    const navigate = useNavigate()
-
-    const handleStartGame = () => {
-      navigate("/game")
+  const navigate = useNavigate()
+  
+  const handleStartGame = () => {
+      const shuffledData = shuffleArray(data)
+      navigate("/game", { state: { shuffledData } })
     }
 
     return (
