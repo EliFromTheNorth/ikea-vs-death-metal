@@ -32,7 +32,18 @@ export default function Home() {
                  </button>
                 <p>
                     If you dare to!
-                </p>               
+                </p>  
+                <br />
+                <br />
+                <br />   
+                <p>
+                  🎵 This game comes with some epic tunes 🎸
+                  <picture>
+                    <source media="(min-width: )" srcset="" />
+                    <img src="" alt="" />
+                  </picture><br />
+                  🔊 For maximum enjoyment, make sure your <b>sound is ON</b> or grab some headphones! 🎧✨
+                </p>          
                </div>
         </>
     )

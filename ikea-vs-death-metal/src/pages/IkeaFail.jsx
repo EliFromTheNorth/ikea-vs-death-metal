@@ -27,7 +27,7 @@ export default function IkeaFail({state}) {
         <>
             <h1>Nope, {currentItem.name} is an ikea product!</h1>
             <img src={currentItem.image} alt="" width="200" />
-            <br></br>
+            <br />
             <button onClick={handleNext} >Next</button> 
         </>
     )

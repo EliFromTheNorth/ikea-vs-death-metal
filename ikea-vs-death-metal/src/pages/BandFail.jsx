@@ -27,7 +27,7 @@ export default function BandFail({state}) {
         <Container>
             <h1>Nope, {currentItem.name} is band!</h1>
             <img src={currentItem.image} alt="" width="200" />
-            <br></br>
+            <br />
             <div className="ratio ratio-16x9">
                 <iframe src={currentItem.video} 
                         allow="autoplay" 
