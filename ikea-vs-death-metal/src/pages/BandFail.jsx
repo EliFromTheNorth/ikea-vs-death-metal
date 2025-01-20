@@ -24,12 +24,20 @@ export default function BandFail({state}) {
     }
     
     return (
-        <>
-            <h1>nope, {currentItem.name} it's a band!</h1>
+        <Container>
+            <h1>Nope, {currentItem.name} it's band!</h1>
             <img src={currentItem.image} alt="" width="200" />
             <br></br>
-            <button onClick={handleNext} >Next</button> 
-        </>
+            <div className="ratio ratio-16x9">
+                <iframe src={currentItem.video} 
+                        allow="autoplay" 
+                        width="420" 
+                        title={currentItem.name} 
+                        allowFullScreen>
+                </iframe>
+            </div>
+            <button onClick={handleNext} >Next</button>
+        </Container>
     )
 }
 

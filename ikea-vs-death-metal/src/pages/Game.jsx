@@ -44,6 +44,9 @@ export default function Game() {
       ? navigate("/bandCorrect", { state: { remainingItems, currentItem, score } })
       : navigate("/ikeaFail", { state: { remainingItems, currentItem, score } });
   };
+
+  // add something like playersChoice = band for refactoring to one page. If players choice band and currentItem.band are equal, then give back correct headline
+  //asi udelat novy state playersChoice, by clickin on band btn, sets to band, or ikea by clicking to ikea btn
     
 
     return (

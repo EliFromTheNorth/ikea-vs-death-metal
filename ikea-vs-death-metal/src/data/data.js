@@ -10,6 +10,7 @@ const data = [
       // type: "Metal Band",
       band: true,
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/BehemothBAND.jpg/800px-BehemothBAND.jpg",
+      video: "https://www.youtube.com/embed/6eq2wgakP5Y?autoplay=1&start=161"
     },
     {
         name: "Malm",
@@ -21,6 +22,7 @@ const data = [
         // type: "Metal Band",
         band: true,
         image: "https://draconianofficial.com/wp-content/uploads/279900458_533449861475810_2129518615662149303_n-e1651691656773.jpeg",
+        video: "https://www.youtube.com/embed/Vna8j585rbw?autoplay=1&start=561"
       },
   ];
   
