@@ -12,13 +12,11 @@ export default function IkeaCorrect({state}) {
         console.log("Updated Remaining Items:", updatedItems)
 
         const updatedScore = score + 1
-
         
         if (updatedItems.length > 0) {
             navigate("/game", { state: { updatedItems: updatedItems, updatedScore: updatedScore  } })
         } else {
-            // alert("Game over bro")
-            navigate("/endGame")
+            navigate("/endGame", { state: { score: updatedScore } })
         }
         console.log("score +1 should happen nooooooooooooooooooooooooooooooooooooooowwwwwwwwwwwwwwwww")
         console.log("updates score is: ", updatedScore)

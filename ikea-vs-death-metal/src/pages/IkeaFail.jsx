@@ -4,19 +4,23 @@ export default function IkeaFail({state}) {
     const navigate = useNavigate()
     const location = useLocation()
 
-    const { remainingItems, currentItem } = location.state || {}
+    const { remainingItems, currentItem, score } = location.state || {}
 
     const handleNext = () => {
         const updatedItems = remainingItems.slice(1)
 
         console.log("Updated Remaining Items:", updatedItems)
 
+        const updatedScore = score
+
+
         if (updatedItems.length > 0) {
-            navigate("/game", {state: { updatedItems: updatedItems }})
+            navigate("/game", {state: { updatedItems: updatedItems, updatedScore: updatedScore }})
         } else {
-            // alert("Game over bro")
-            navigate("/endGame")
+            navigate("/endGame", { state: { score: updatedScore } })
         }
+        console.log("score +1 should happen nooooooooooooooooooooooooooooooooooooooowwwwwwwwwwwwwwwww")
+        console.log("updates score is: ", updatedScore)
     }
 
     return (
