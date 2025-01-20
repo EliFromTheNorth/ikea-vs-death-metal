@@ -4,7 +4,7 @@ export default function IkeaCorrect({state}) {
     const navigate = useNavigate()
     const location = useLocation()
 
-    const { remainingItems} = location.state || {}
+    const { remainingItems, currentItem} = location.state || {}
 
     const handleNext = () => {
         const updatedItems = remainingItems.slice(1)
@@ -21,7 +21,9 @@ export default function IkeaCorrect({state}) {
 
     return (
         <>
-            <h1>Yes, it's an ikea product!</h1>
+            <h1>Yes, {currentItem.name} it's an ikea product!</h1>
+            <img src={currentItem.image} alt="" width="200" />
+            <br></br>
             <button onClick={handleNext} >Next</button>
         </>
     )
