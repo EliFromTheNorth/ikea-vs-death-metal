@@ -1,30 +1,36 @@
-import { useNavigate, useLocation } from "react-router-dom"
+import { useNavigate, useLocation, Routes, Route, } from "react-router-dom"
+import { useState } from "react"
 
 
-export default function IkeaCorrect() {
+export default function IkeaCorrect({state}) {
     const navigate = useNavigate()
     const location = useLocation()
     // const handleNext = () => {
     //     navigate("/game")
     // }
 
-    const { remainingItems = [], currentItem = null } = location.state || {};
+    const { remainingItems} = location.state || {};
 
     const handleNext = () => {
-        if (remainingItems.length === 0) {
-            alert("Game over bro")
-            return
-        }
+        const updatedItems = remainingItems.slice(1)
+        // const nextItem = updatedItems[0] || null
+        // const nextItem = updatedItems[0]
 
-        const updatedItems = [...remainingItems]
-        updatedItems.shift()
-        const nextItem = updatedItems[0]
-
-        
-        console.log("Next Item:", nextItem);
+        // console.log("Next Item:", nextItem);
         console.log("Updated Remaining Items:", updatedItems)
 
-        navigate("/game")
+        if (remainingItems.length > 0) {
+            // setRemainigItems(updatedItems)
+            // setCurrentItem(nextItem)
+            navigate("/game", { state: { updatedItems: updatedItems } })
+        } else {
+            alert("Game over bro")
+        }
+
+
+        
+
+        
     }
 
     return (
@@ -34,3 +40,11 @@ export default function IkeaCorrect() {
         </>
     )
 }
+
+
+// if (updatedItems.length > 0) {
+//     navigate("/game", { state: { remainingItems: updatedItems, currentItem: nextItem } });
+//   } else {
+//     navigate("/game-over"); // Navigate to a game-over screen if no items left
+//   }
+// };

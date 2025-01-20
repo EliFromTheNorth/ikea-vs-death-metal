@@ -1,4 +1,6 @@
 import {useNavigate} from "react-router-dom"
+import { useState, useEffect } from "react"
+
 import data from "../data/data"
 
 
@@ -19,6 +21,7 @@ export default function Home() {
   const handleStartGame = () => {
       const shuffledData = shuffleArray(data)
       navigate("/game", { state: { shuffledData } })
+      console.log("shuffled data from home.jsx", shuffledData)
     }
 
     return (
@@ -35,4 +38,3 @@ export default function Home() {
         </>
     )
 }
-

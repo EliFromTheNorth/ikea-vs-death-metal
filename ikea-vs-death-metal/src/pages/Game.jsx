@@ -1,4 +1,4 @@
-import { useNavigate, useLocation } from "react-router-dom"
+import { useNavigate, useLocation, Routes, Route, } from "react-router-dom"
 import { useState, useEffect } from "react"
 
 
@@ -9,62 +9,50 @@ export default function Game() {
 
   const navigate = useNavigate()
   const location = useLocation()
-    const {shuffledData} = location.state || {}
+    
+  const {shuffledData, updatedItems} = location.state || {}
 
-
-    const [remainingItems, setRemainingItems] = useState(shuffledData || [])
+  const [remainingItems, setRemainingItems] = useState(shuffledData || updatedItems || [])
 
     console.log("remainingItems are:", remainingItems)
 
-    
-    const [currentItem, setCurrentItem] = useState(remainingItems[0] || null)
+  const [currentItem, setCurrentItem] = useState(remainingItems[0] || null)
+  // const [currentItem, setCurrentItem] = useState(remainingItems[0])
 
-    console.log("currentItem are: ", currentItem)
+    console.log("currentItem is: ", currentItem)
 
-    
-    
-    
-    useEffect(() => {
+
+  useEffect(() => {
       if (remainingItems.length > 0) { 
         setCurrentItem(remainingItems[0])
-      } else {
-        setCurrentItem(null); // Set to null if no items remain
+      // } else {
+      //   setCurrentItem(null)
       }
     }, [remainingItems])
     
     console.log("remainingItems after use effect are:", remainingItems)
+    console.log("current item after use effect :", currentItem)
 
+  // const handleIkeaBag = () => {
+  //     currentItem.band ? navigate("/bandFail" , { state: { remainingItems, currentItem } }) : navigate("/ikeaCorrect", { state: { remainingItems, currentItem } })
+  //   }
     
-    
-    // const oneObject = data[Math.floor(Math.random() * data.length)]
-    // console.log(oneObject)
-    
+  // const handleMetalBtn = () => {
+  //     currentItem.band ? navigate("/bandCorrect", { state: { remainingItems, currentItem } }) : navigate("/ikeaFail", { state: { remainingItems, currentItem } })
+  //   }
 
-    // if (remainingItems.length === 0) {
-    //   alert("Game Over! You've played all items.")
-    //   setCurrentItem(null)
-    // } else {
-    //   setRemainingItems(updatedItems);
-    //   setCurrentItem(updatedItems[0]);
-    //   console.log("current item is " + currentItem.name)
-    // }
-    
-    
-    const handleIkeaBag = () => {
-      currentItem.band ? navigate("/bandFail" , { state: { remainingItems, currentItem } }) : navigate("/ikeaCorrect", { state: { remainingItems, currentItem } })
-    }
-    
-    const handleMetalBtn = () => {
-      currentItem.band ? navigate("/bandCorrect", { state: { remainingItems, currentItem } }) : navigate("/ikeaFail", { state: { remainingItems, currentItem } })
-    }
-    
-    // const updatedItems = remainingItems.slice(1)
-    // setRemainingItems(updatedItems);
+  const handleIkeaBag = () => {
+    currentItem.band
+      ? navigate("/bandFail", { state: { remainingItems, currentItem } })
+      : navigate("/ikeaCorrect", { state: { remainingItems, currentItem } });
+  };
 
-    // if (updatedItems.length === 0) {
-    //   alert("Game Over! You've played all items.")
-    //   // setCurrentItem(null)
-    // }
+  const handleMetalBtn = () => {
+    currentItem.band
+      ? navigate("/bandCorrect", { state: { remainingItems, currentItem } })
+      : navigate("/ikeaFail", { state: { remainingItems, currentItem } });
+  };
+    
 
     return (
         <div>
