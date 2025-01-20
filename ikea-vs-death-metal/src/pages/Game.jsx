@@ -35,14 +35,14 @@ export default function Game() {
 
   const handleIkeaBag = () => {
     currentItem.band
-      ? navigate("/bandFail", { state: { remainingItems, currentItem } })
-      : navigate("/ikeaCorrect", { state: { remainingItems, currentItem } });
+      ? navigate("/bandFail", { state: { remainingItems, currentItem, score } })
+      : navigate("/ikeaCorrect", { state: { remainingItems, currentItem, score } });
   };
 
   const handleMetalBtn = () => {
     currentItem.band
-      ? navigate("/bandCorrect", { state: { remainingItems, currentItem } })
-      : navigate("/ikeaFail", { state: { remainingItems, currentItem } });
+      ? navigate("/bandCorrect", { state: { remainingItems, currentItem, score } })
+      : navigate("/ikeaFail", { state: { remainingItems, currentItem, score } });
   };
     
 
