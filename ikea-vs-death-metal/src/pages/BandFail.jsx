@@ -1,4 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom"
+import { Container } from "react-bootstrap"
+
 
 export default function BandFail({state}) {
     const navigate = useNavigate()
