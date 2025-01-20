@@ -6,6 +6,7 @@ import IkeaCorrect from "./pages/ikeaCorrect"
 import IkeaFail from "./pages/ikeaFail"
 import BandFail from "./pages/bandFail"
 import BandCorrect from "./pages/bandCorrect"
+import EndGame from "./pages/endGame"
 
 function App() {
     return (
@@ -17,6 +18,7 @@ function App() {
             <Route path="/ikeaFail" element={<IkeaFail />} />
             <Route path="/bandFail" element={<BandFail />} />
             <Route path="/bandCorrect" element={<BandCorrect />} />
+            <Route path="/endGame" element={<EndGame />} />
           </Routes>
       </div>
     )

@@ -11,10 +11,11 @@ export default function IkeaFail({state}) {
 
         console.log("Updated Remaining Items:", updatedItems)
 
-        if (remainingItems.length > 0) {
+        if (updatedItems.length > 0) {
             navigate("/game", {state: { updatedItems: updatedItems }})
         } else {
-            alert("Game over bro")
+            // alert("Game over bro")
+            navigate("/endGame")
         }
     }
 

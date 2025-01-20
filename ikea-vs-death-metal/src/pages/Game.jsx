@@ -1,8 +1,5 @@
-import { useNavigate, useLocation, Routes, Route, } from "react-router-dom"
+import { useNavigate, useLocation, } from "react-router-dom"
 import { useState, useEffect } from "react"
-
-
-console.log("hello")
 
 
 export default function Game() {
@@ -17,7 +14,6 @@ export default function Game() {
     console.log("remainingItems are:", remainingItems)
 
   const [currentItem, setCurrentItem] = useState(remainingItems[0] || null)
-  // const [currentItem, setCurrentItem] = useState(remainingItems[0])
 
     console.log("currentItem is: ", currentItem)
 
@@ -32,14 +28,6 @@ export default function Game() {
     
     console.log("remainingItems after use effect are:", remainingItems)
     console.log("current item after use effect :", currentItem)
-
-  // const handleIkeaBag = () => {
-  //     currentItem.band ? navigate("/bandFail" , { state: { remainingItems, currentItem } }) : navigate("/ikeaCorrect", { state: { remainingItems, currentItem } })
-  //   }
-    
-  // const handleMetalBtn = () => {
-  //     currentItem.band ? navigate("/bandCorrect", { state: { remainingItems, currentItem } }) : navigate("/ikeaFail", { state: { remainingItems, currentItem } })
-  //   }
 
   const handleIkeaBag = () => {
     currentItem.band
