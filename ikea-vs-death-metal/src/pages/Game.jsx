@@ -7,7 +7,9 @@ export default function Game() {
   const navigate = useNavigate()
   const location = useLocation()
     
-  const {shuffledData, updatedItems} = location.state || {}
+  const {shuffledData, updatedItems, updatedScore } = location.state || {}
+
+  const [score, setScore] = useState(updatedScore || 0)
 
   const [remainingItems, setRemainingItems] = useState(shuffledData || updatedItems || [])
 
@@ -21,13 +23,15 @@ export default function Game() {
   useEffect(() => {
       if (remainingItems.length > 0) { 
         setCurrentItem(remainingItems[0])
-      // } else {
-      //   setCurrentItem(null)
+        // setScore(updatedScore)
+      } else {
+        console.log("no items in array")
       }
     }, [remainingItems])
     
     console.log("remainingItems after use effect are:", remainingItems)
     console.log("current item after use effect :", currentItem)
+    console.log("score after use effect :", score)
 
   const handleIkeaBag = () => {
     currentItem.band
