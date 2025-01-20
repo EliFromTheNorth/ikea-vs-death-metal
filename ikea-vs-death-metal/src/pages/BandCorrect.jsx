@@ -1,4 +1,5 @@
 import { useNavigate, useLocation } from "react-router-dom"
+import { Container } from "react-bootstrap"
 
 export default function BandCorrect({state}) {
     const navigate = useNavigate()
@@ -23,11 +24,19 @@ export default function BandCorrect({state}) {
     }
 
     return (
-        <>
+        <Container>
             <h1>Yes, {currentItem.name} it's band!</h1>
             <img src={currentItem.image} alt="" width="200" />
             <br></br>
+            <div className="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?autoplay=1&start=90" 
+                        allow="autoplay" 
+                        width="420" 
+                        title={currentItem.name} 
+                        allowFullScreen>
+                </iframe>
+            </div>
             <button onClick={handleNext} >Next</button>
-        </>
+        </Container>
     )
 }

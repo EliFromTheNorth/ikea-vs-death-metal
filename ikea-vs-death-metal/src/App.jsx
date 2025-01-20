@@ -1,4 +1,5 @@
 import "./app.css"
+import 'bootstrap/dist/css/bootstrap.min.css'
 import {Routes, Route, useNavigate} from "react-router-dom"
 import Home from "./pages/home"
 import Game from "./pages/game"
