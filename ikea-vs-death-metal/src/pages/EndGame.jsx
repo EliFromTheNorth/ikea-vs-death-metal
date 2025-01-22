@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom"
 import data from "../data/data"
+import Confetti from "../components/confetti"
 
 
 export default function EndGame({state}) {
@@ -18,6 +19,7 @@ export default function EndGame({state}) {
 
     return (
         <>
+            <Confetti />
             <h1>Game Over</h1>
             <h2>Your Score: {score}/{data.length}</h2>
             <button onClick={ handlePlayAgain }>Play again</button>
