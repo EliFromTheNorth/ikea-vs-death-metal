@@ -19,7 +19,6 @@ export default function Game() {
 
     console.log("currentItem is: ", currentItem)
 
-
   useEffect(() => {
       if (remainingItems.length > 0) { 
         setCurrentItem(remainingItems[0])
@@ -33,17 +32,11 @@ export default function Game() {
     console.log("current item after use effect :", currentItem)
     console.log("score after use effect :", score)
 
-  const handleIkeaBag = () => {
-    currentItem.band
-      ? navigate("/bandFail", { state: { remainingItems, currentItem, score } })
-      : navigate("/ikeaCorrect", { state: { remainingItems, currentItem, score } });
-  };
-
-  const handleMetalBtn = () => {
-    currentItem.band
-      ? navigate("/bandCorrect", { state: { remainingItems, currentItem, score } })
-      : navigate("/ikeaFail", { state: { remainingItems, currentItem, score } });
-  };
+  const handleButton = (buttonName) => {
+      navigate("/verdict", { 
+        state: { remainingItems, currentItem, score, buttonClicked: buttonName } 
+      })
+  }
 
   // add something like playersChoice = band for refactoring to one page. If players choice band and currentItem.band are equal, then give back correct headline
   //asi udelat novy state playersChoice, by clickin on band btn, sets to band, or ikea by clicking to ikea btn
@@ -52,10 +45,10 @@ export default function Game() {
     return (
         <div>
           <h1>{currentItem.name}</h1>
-          <button onClick={handleIkeaBag}>
+          <button onClick={() => handleButton("ikeaBtn")}>
             <img src="/images/71cQiE5yR2L-Photoroom.png" alt="" width ="200"/>
           </button>
-          <button onClick={handleMetalBtn}>
+          <button onClick={() => handleButton("bandBtn")}>
             <img src="/images/b7f4b4b8-06f9-4ee9-bebf-15ed222e19e9.jpg" alt="" width ="200"/>
           </button>
 

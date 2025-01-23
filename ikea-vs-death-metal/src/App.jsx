@@ -8,6 +8,7 @@ import IkeaFail from "./pages/ikeaFail"
 import BandFail from "./pages/bandFail"
 import BandCorrect from "./pages/bandCorrect"
 import EndGame from "./pages/endGame"
+import Verdict from "./pages/verdict"
 
 function App() {
     return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/bandFail" element={<BandFail />} />
             <Route path="/bandCorrect" element={<BandCorrect />} />
             <Route path="/endGame" element={<EndGame />} />
+            <Route path="/verdict" element={<Verdict />} />
           </Routes>
       </div>
     )
