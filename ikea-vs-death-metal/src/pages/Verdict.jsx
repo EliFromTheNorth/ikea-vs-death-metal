@@ -12,20 +12,9 @@ export default function Verdict({state}) {
 
         console.log("Updated Remaining Items:", updatedItems)
 
-        // const updatedScore = score + 1
-
-
         const updatedScore = ((currentItem.band && buttonClicked === "bandBtn") || (!currentItem.band && buttonClicked === "ikeaBtn")) ? score + 1 : score
         
-        
-        // (currentItem.band && buttonClicked === "ikeaBtn") || (!currentItem.band && buttonClicked === "bandBtn")) {
-        //     header = "Ouch"
-        // } else if 
-        //     ((currentItem.band && buttonClicked === "bandBtn") || (!currentItem.band && buttonClicked === "ikeaBtn")) {
-        //     header = "Hell YES!"
-        // }
-
-        if (updatedItems.length > 0) {
+                if (updatedItems.length > 0) {
             navigate("/game", { state: { updatedItems: updatedItems, updatedScore: updatedScore  } })
          } else {
             navigate("/endGame", { state: { score: updatedScore } })
@@ -46,34 +35,3 @@ export default function Verdict({state}) {
     )
 
 }
-
-// **********************************************
-
-// export default function Verdict ({state}) {
-//     const location = useLocation()
-//     const { currentItem, buttonClicked} = location.state || {}
-
-//     console.log("2")
-
-
-//     const isCorrect = (currentItem.band && buttonClicked === "bandBtn") || 
-//     (!currentItem.band && buttonClicked === "ikeaBtn");
-
-//     console.log("3")
-
-
-// const resultMessage = isCorrect ? "Hell YES!" : "Ouch";
-
-
-// console.log("4")
-
-
-//     return (
-//         <div>
-//             <h1>{resultMessage}</h1>
-//             <h2>
-//                 {currentItem.name}
-//             </h2>
-//         </div>
-//     )
-// }
