@@ -7,7 +7,8 @@ export default function Title() {
     const { currentItem, buttonClicked } = location.state || {}
 
     
-    let header = "bug alert"
+    let header
+
     
     if ((currentItem.band && buttonClicked === "ikeaBtn") || (!currentItem.band && buttonClicked === "bandBtn")) {
             header = "Ouch"
@@ -20,11 +21,4 @@ export default function Title() {
 
 }
 
-    // const title = ((currentItem.band && buttonClicked === "ikeaBtn") || 
-    // (!currentItem.band && buttonClicked === "bandBtn")) ? "Ouch"
-    // : "yes yeyeye"
-
-
-// export default function Title () {
-//     console.log("title")
-// }
+// Co tak udelat neco jako ten oif statement a kdyz jo tak correct guess = true a kdyz ne tak correct guess je false. a pak se to da pouzit ve score i ve title..............hmmmmmmmmmmmmmmmmmmmmmmmmm???????????????? Mozna to udelat jako state....?
