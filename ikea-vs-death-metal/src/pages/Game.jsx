@@ -53,7 +53,7 @@ export default function Game() {
         <div>
           <h1>{currentItem.name}</h1>
           <button onClick={handleIkeaBag}>
-            <img src="/images/71cQiE5yR2L._AC_SL1239_.jpg" alt="" width ="200"/>
+            <img src="/images/71cQiE5yR2L-Photoroom.png" alt="" width ="200"/>
           </button>
           <button onClick={handleMetalBtn}>
             <img src="/images/b7f4b4b8-06f9-4ee9-bebf-15ed222e19e9.jpg" alt="" width ="200"/>
