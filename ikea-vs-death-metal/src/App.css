@@ -2,7 +2,7 @@
   /* max-width: 1280px; */
   margin: 0 auto;
   padding-top: 20px;
-  /* padding: 20rem; */
+  /* padding: 20rem; */ /* doesnt work for game page */
   width: 100%;
   height: 100vh;
   text-align: center;
