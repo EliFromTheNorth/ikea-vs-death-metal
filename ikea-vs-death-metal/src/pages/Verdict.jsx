@@ -12,7 +12,18 @@ export default function Verdict({state}) {
 
         console.log("Updated Remaining Items:", updatedItems)
 
-        const updatedScore = score + 1
+        // const updatedScore = score + 1
+
+
+        const updatedScore = ((currentItem.band && buttonClicked === "bandBtn") || (!currentItem.band && buttonClicked === "ikeaBtn")) ? score + 1 : score
+        
+        
+        // (currentItem.band && buttonClicked === "ikeaBtn") || (!currentItem.band && buttonClicked === "bandBtn")) {
+        //     header = "Ouch"
+        // } else if 
+        //     ((currentItem.band && buttonClicked === "bandBtn") || (!currentItem.band && buttonClicked === "ikeaBtn")) {
+        //     header = "Hell YES!"
+        // }
 
         if (updatedItems.length > 0) {
             navigate("/game", { state: { updatedItems: updatedItems, updatedScore: updatedScore  } })
@@ -23,15 +34,11 @@ export default function Verdict({state}) {
          console.log("score +1 should happen nooooooooooooooooooooooooooooooooooooooowwwwwwwwwwwwwwwww")
          console.log("updates score is: ", updatedScore)
     }
-    // const title = ((currentItem.band && buttonClicked === "ikeaBtn") || 
-    // (!currentItem.band && buttonClicked === "bandBtn")) ? "Ouch"
-    // : "yes yeyeye"
 
     return (
         <>
           <Title />
     
-          {/* <h1>{title}</h1> */}
           <img src={currentItem.image} alt="" width="200" />
           <br />
           <button onClick={handleNext} >Next</button>
