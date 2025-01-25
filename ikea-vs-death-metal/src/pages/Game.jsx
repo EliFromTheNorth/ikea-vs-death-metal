@@ -38,18 +38,14 @@ export default function Game() {
       })
   }
 
-  // add something like playersChoice = band for refactoring to one page. If players choice band and currentItem.band are equal, then give back correct headline
-  //asi udelat novy state playersChoice, by clickin on band btn, sets to band, or ikea by clicking to ikea btn
-    
-
     return (
         <div>
           <h1>{currentItem.name}</h1>
-          <button onClick={() => handleButton("ikeaBtn")}>
-            <img src="/images/71cQiE5yR2L-Photoroom.png" alt="" width ="200"/>
+          <button className="button-game" onClick={() => handleButton("ikeaBtn")}>
+            <img className="button-ikea-image" src="/images/71cQiE5yR2L-Photoroom.png" alt="" width ="200"/>
           </button>
-          <button onClick={() => handleButton("bandBtn")}>
-            <img src="/images/b7f4b4b8-06f9-4ee9-bebf-15ed222e19e9.jpg" alt="" width ="200"/>
+          <button className="button-game" onClick={() => handleButton("bandBtn")}>
+            <img className="button-band-image" src="/images/b7f4b4b8-06f9-4ee9-bebf-15ed222e19e9.jpg" alt="" width ="200"/>
           </button>
 
         </div>

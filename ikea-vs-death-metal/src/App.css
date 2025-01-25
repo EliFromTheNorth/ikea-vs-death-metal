@@ -16,25 +16,21 @@ overflow-y: auto;
   /* border: 10px solid red !important; */
 }
 
-body {
-  /* border: 10px solid green !important; */
-  /* overflow: hidden */
+.button-game {
+  background: transparent;
+  border: none;
+  transition: transform 0.3s ease;
+  opacity: 0.8;
 
 }
 
-html {
-  /* border: 10px solid purple !important; */
-  /* overflow: hidden */
-
+.button-game:hover {
+  transform: scale(1.1);
+  box-shadow: inset 0px 0px 10px 2px rgb (0 0 0 /50%);
+  opacity: 1;
 }
-/* 
-html { height: 100% }
-body { min-height: 100% } */
 
-
-
-/* .btn-next {
-  margin: 0;
-  padding: 0;
-} */
+.button-band-image {
+  border-radius: 20px;
+}
 
