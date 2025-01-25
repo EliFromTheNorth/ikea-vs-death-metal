@@ -16,6 +16,15 @@ overflow-y: auto;
   /* border: 10px solid red !important; */
 }
 
+.home-container {
+  margin-top: 25vh;
+}
+
+.game-title {
+  font-family: 'Metal Mania', serif;
+  font-size: 140px;
+}
+
 .button-game {
   background: transparent;
   border: none;

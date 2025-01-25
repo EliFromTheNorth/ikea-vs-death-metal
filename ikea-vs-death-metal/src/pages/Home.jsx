@@ -24,8 +24,8 @@ export default function Home() {
     }
 
     return (
-        <>
-               <h1>Ikea vs Death Metal</h1>
+        <div className="home-container">
+               <h1 className="game-title">Ikea vs Death Metal</h1>
                <div className="button-start">
                  <button onClick={handleStartGame}>
                    Start Game
@@ -45,6 +45,6 @@ export default function Home() {
                   🔊 For maximum enjoyment, make sure your <b>sound is ON</b> or grab some headphones! 🎧✨
                 </p>          
                </div>
-        </>
+        </div>
     )
 }
