@@ -20,6 +20,15 @@
   font-size: 140px;
 }
 
+.ikea-header {
+  background-image: url("/images/flag.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .button-game {
   background: transparent;
   border: none;
