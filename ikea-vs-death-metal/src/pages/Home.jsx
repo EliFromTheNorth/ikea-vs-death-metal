@@ -20,7 +20,6 @@ export default function Home() {
   const handleStartGame = () => {
       const shuffledData = shuffleArray(data)
       navigate("/game", { state: { shuffledData } })
-      console.log("shuffled data from home.jsx", shuffledData)
     }
 
     return (
