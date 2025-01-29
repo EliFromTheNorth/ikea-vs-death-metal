@@ -8,10 +8,6 @@ export default function EndGame({state}) {
     const location = useLocation()
 
     const { score } = location.state || {}
-
-    
-    // const finalScore = score
-    console.log("end score is: ", score)
     
     const handlePlayAgain = () => {
         navigate("/")

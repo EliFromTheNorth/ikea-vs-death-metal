@@ -10,22 +10,13 @@ export default function Verdict({state}) {
 
     const handleNext = () => {
         const updatedItems = remainingItems.slice(1)
-
-        // console.log("Updated Remaining Items:", updatedItems)
-
-        // const updatedScore = ((currentItem.band && buttonClicked === "bandBtn") || (!currentItem.band && buttonClicked === "ikeaBtn")) ? score + 1 : score
-        
+  
         if (updatedItems.length > 0) {
             navigate("/game", { state: { updatedItems: updatedItems, updatedScore: updatedScore  } })
          } else {
             navigate("/endGame", { state: { score: updatedScore } })
          }
-
-        //  console.log("score +1 should happen nooooooooooooooooooooooooooooooooooooooowwwwwwwwwwwwwwwww")
-        //  console.log("updates score is: ", updatedScore)
     }
-
-    //***************************************** */
 
     let correctAnswer = null
 
@@ -36,12 +27,7 @@ export default function Verdict({state}) {
         correctAnswer = true
   }
 
-  const updatedScore = correctAnswer ? score + 1 : score
-
-
-    //***************************************** */
-
-    
+  const updatedScore = correctAnswer ? score + 1 : score    
 
     return (
         <div>

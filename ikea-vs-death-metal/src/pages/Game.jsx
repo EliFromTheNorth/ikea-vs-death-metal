@@ -13,24 +13,15 @@ export default function Game() {
 
   const [remainingItems, setRemainingItems] = useState(shuffledData || updatedItems || [])
 
-    console.log("remainingItems are:", remainingItems)
-
   const [currentItem, setCurrentItem] = useState(remainingItems[0] || null)
-
-    console.log("currentItem is: ", currentItem)
 
   useEffect(() => {
       if (remainingItems.length > 0) { 
         setCurrentItem(remainingItems[0])
-        // setScore(updatedScore)
       } else {
         console.log("no items in array")
       }
     }, [remainingItems])
-    
-    console.log("remainingItems after use effect are:", remainingItems)
-    console.log("current item after use effect :", currentItem)
-    console.log("score after use effect :", score)
 
   const handleButton = (buttonName) => {
       navigate("/verdict", { 
@@ -51,6 +42,3 @@ export default function Game() {
         </div>
       );
 }
-
-// console.log("remainingItems are: " + remainingItems)
-
