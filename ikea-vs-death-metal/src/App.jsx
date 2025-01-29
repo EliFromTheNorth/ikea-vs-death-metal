@@ -3,10 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import {Routes, Route, useNavigate} from "react-router-dom"
 import Home from "./pages/home"
 import Game from "./pages/game"
-import IkeaCorrect from "./pages/ikeaCorrect"
-import IkeaFail from "./pages/ikeaFail"
-import BandFail from "./pages/bandFail"
-import BandCorrect from "./pages/bandCorrect"
 import EndGame from "./pages/endGame"
 import Verdict from "./pages/verdict"
 
@@ -16,10 +12,6 @@ function App() {
           <Routes>
             <Route path ="/" element={<Home />}/>
             <Route path="/game" element={<Game />} />
-            <Route path="/ikeaCorrect" element={<IkeaCorrect />} />
-            <Route path="/ikeaFail" element={<IkeaFail />} />
-            <Route path="/bandFail" element={<BandFail />} />
-            <Route path="/bandCorrect" element={<BandCorrect />} />
             <Route path="/endGame" element={<EndGame />} />
             <Route path="/verdict" element={<Verdict />} />
           </Routes>
