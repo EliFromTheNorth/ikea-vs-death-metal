@@ -25,10 +25,10 @@ export default function Home() {
     return (
         <div className="home-container">
                <h1 className="game-title"><span className="ikea-header">Ikea</span> <span className="vs">vs</span> Death Metal</h1>
-               <div className="button-start">
-                 <button onClick={handleStartGame} className="button-64" role="button"><span class="text">
-                   Start Game
+                 <button onClick={handleStartGame} className="button-start" role="button"><span class="text">
+                 Summon the Game
                    </span></button>
+               <div className="home-text">
                 <p>
                     If you dare to.
                 </p>  

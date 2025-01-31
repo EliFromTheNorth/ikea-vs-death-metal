@@ -19,6 +19,7 @@
 .game-title {
   font-family: 'Metal Mania', serif;
   font-size: 140px;
+  margin-bottom: 45px;
 }
 
 .ikea-header {
@@ -36,16 +37,18 @@
   font-size: 75%;
 }
 
-.button-64 {
+.button-start {
+  /* margin-top: 25px; */
   align-items: center;
-  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  background-image: linear-gradient(144deg,#696969, #390d9f 50%,#696969);
+  /* background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB); */
   border: 0;
   border-radius: 8px;
   box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
   box-sizing: border-box;
-  color: #FFFFFF;
+  color: dimgray;
   display: flex;
-  font-family: Phantomsans, sans-serif;
+  font-family: 'Metal Mania', sans-serif;
   font-size: 20px;
   justify-content: center;
   line-height: 1em;
@@ -61,29 +64,33 @@
   margin: 0 auto;
 }
 
-.button-64:active,
-.button-64:hover {
+.button-start:active,
+.button-start:hover {
   outline: 0;
 }
 
-.button-64 span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
+.button-start span {
+  background-color: #1D1D2D;
+  padding: 10px 15px;
   border-radius: 6px;
   width: 100%;
   height: 100%;
   transition: 300ms;
 }
 
-.button-64:hover span {
+.button-start:hover span {
   background: none;
 }
 
 @media (min-width: 768px) {
-  .button-64 {
-    font-size: 24px;
+  .button-start {
+    font-size: 36px;
     min-width: 196px;
   }
+}
+
+.home-text {
+  margin-top: 15px;
 }
 
 .button-game {
