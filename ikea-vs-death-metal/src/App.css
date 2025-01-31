@@ -93,6 +93,20 @@
   margin-top: 15px;
 }
 
+/*********************** GAME PAGE *************************/
+
+.game-container {
+  margin-top: 150px;
+}
+
+.name {
+  font-size: 130px;
+}
+
+.game-buttons {
+  /* do flex */
+}
+
 .button-game {
   background: transparent;
   border: none;
