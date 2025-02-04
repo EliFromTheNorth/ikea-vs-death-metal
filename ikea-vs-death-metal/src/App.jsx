@@ -5,13 +5,13 @@ import Home from "./pages/home"
 import Game from "./pages/game"
 import EndGame from "./pages/endGame"
 import Verdict from "./pages/verdict"
-import FogBackground from "./components/FogBackground";
+import Fog from "./components/Fog";
 
 
 function App() {
     return (
       <div>
-          <FogBackground />
+          <Fog />
           <Routes>
             <Route path ="/" element={<Home />}/>
             <Route path="/game" element={<Game />} />
