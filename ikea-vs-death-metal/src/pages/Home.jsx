@@ -23,6 +23,20 @@ export default function Home() {
     }
 
     return (
+      <div>
+        {/* <div id="foglayer_01" className="fog">
+              <div className="image01"></div>
+              <div className="image02"></div>
+            </div>
+            <div id="foglayer_02" class="fog">
+              <div className="image01"></div>
+              <div className="image02"></div>
+            </div>
+            <div id="foglayer_03" class="fog">
+              <div className="image01"></div>
+              <div className="image02"></div>
+        </div> */}
+
         <div className="home-container">
                <h1 className="game-title"><span className="ikea-header">Ikea</span> <span className="vs">vs</span> Death Metal</h1>
                  <button onClick={handleStartGame} className="button-start" role="button"><span class="text">
@@ -44,6 +58,10 @@ export default function Home() {
                   🔊 For maximum enjoyment, make sure your <b>sound is ON</b> or grab some headphones! 🎧✨
                 </p>          
                </div>
+          </div>
         </div>
     )
 }
+
+
+
