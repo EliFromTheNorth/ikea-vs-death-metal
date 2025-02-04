@@ -12,6 +12,8 @@
   font-size: 30px;
 }
 
+/************************** HOME PAGE **************************/
+
 .home-container {
   margin-top: 20vh;
 }
@@ -102,10 +104,15 @@
 
 .name {
   font-size: 130px;
+  font-family: 'Metal Mania', serif;
 }
 
 .game-buttons {
-  /* do flex */
+  margin-top: 3% 10% 0 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3%;
 }
 
 .button-game {
@@ -113,7 +120,6 @@
   border: none;
   transition: transform 0.3s ease;
   opacity: 0.8;
-
 }
 
 .button-game:hover {
@@ -124,9 +130,13 @@
 
 .button-band-image {
   border-radius: 20px;
+  max-width: 20rem;
 }
 
-.name {
-  font-family: 'Metal Mania', serif;
+.button-ikea-image {
+  border-radius: 20px;
+  max-width: 25rem;
 }
+/**************************  page **************************/
+
 

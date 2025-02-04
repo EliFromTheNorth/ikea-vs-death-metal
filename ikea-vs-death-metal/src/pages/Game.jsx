@@ -34,10 +34,10 @@ export default function Game() {
           <h1 className="name">{currentItem.name}</h1>
           <div className="game-buttons">
             <button className="button-game" onClick={() => handleButton("ikeaBtn")}>
-              <img src="/images/IkeaBag.png" alt="" width ="200"/>
+              <img className="button-ikea-image" src="/images/IkeaBag.png" alt="ikea button"/>
             </button>
             <button className="button-game" onClick={() => handleButton("bandBtn")}>
-              <img className="button-band-image" src="/images/Angel.jpg" alt="" width ="200"/>
+              <img className="button-band-image" src="/images/Angel.jpg" alt="metal button"/>
             </button>
           </div>
 
