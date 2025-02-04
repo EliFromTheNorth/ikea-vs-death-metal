@@ -1,4 +1,7 @@
 
+import "../Fog.css";
+
+
 export default function Fog() {
     return (
     <div>
