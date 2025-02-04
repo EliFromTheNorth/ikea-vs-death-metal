@@ -99,11 +99,11 @@
 /*********************** GAME PAGE *************************/
 
 .game-container {
-  margin-top: 150px;
+  margin-top: 16vh;
 }
 
 .name {
-  font-size: 130px;
+  font-size: clamp(6rem, 10vw, 140px);
   font-family: 'Metal Mania', serif;
 }
 
@@ -140,6 +140,7 @@
   border-radius: 20px;
   width: 100%;
   max-width: 25rem;
+  min-width: 20rem;
   height: auto;
 }
 /**************************  page **************************/
