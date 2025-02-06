@@ -147,3 +147,19 @@
 
 /**************************  verdict page **************************/
 
+
+.verdictContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  /* overflow: auto; */
+}
+
+.videoPlayer {
+  max-width: 80%;
+  margin: 0 auto;
+}
