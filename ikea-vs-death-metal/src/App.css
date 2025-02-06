@@ -161,11 +161,21 @@
 
 .verdictContainer > h1 {
   font-family: 'Metal Mania', sans-serif;
-  font-size: large;
+  font-size: 20vh;
+}
+
+.verdictContainer > h2 {
+  font-family: 'Metal Mania', sans-serif;
+  /* font-size: 20vh; */
 }
 
 .videoPlayer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
   max-width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
 }
 
