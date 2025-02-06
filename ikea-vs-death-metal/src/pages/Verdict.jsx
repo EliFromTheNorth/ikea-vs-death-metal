@@ -36,7 +36,7 @@ export default function Verdict({state}) {
             <br />
             {currentItem.band ? <VerdictVideo /> : <VerdictImage />}
             <br />
-            <button className="button-start" onClick={handleNext}><span class="text">Next</span></button>
+            <button className="button-start" onClick={handleNext}><span className="text">Next</span></button>
          </div> 
     )
 

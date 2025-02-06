@@ -159,6 +159,11 @@
   /* overflow: auto; */
 }
 
+.verdictContainer > h1 {
+  font-family: 'Metal Mania', sans-serif;
+  font-size: large;
+}
+
 .videoPlayer {
   max-width: 80%;
   margin: 0 auto;
