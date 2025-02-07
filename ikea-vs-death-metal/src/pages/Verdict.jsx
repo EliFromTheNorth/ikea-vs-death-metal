@@ -31,7 +31,7 @@ export default function Verdict({state}) {
 
     return (
         <div className="verdictContainer">
-            <h1>{correctAnswer ? "Hell YES!" : "Ouch"}</h1>
+            <h1>{correctAnswer ? "Hell YES!" : "Ouch..."}</h1>
             <h2> {currentItem.name} is {currentItem.band ? "a band" : "an ikea product"}!</h2>
             <br />
             {currentItem.band ? <VerdictVideo /> : <VerdictImage />}
