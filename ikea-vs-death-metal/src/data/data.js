@@ -10,7 +10,8 @@ const data = [
       // type: "Metal Band",
       band: true,
       image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/BehemothBAND.jpg/800px-BehemothBAND.jpg",
-      video: "https://www.youtube.com/embed/6eq2wgakP5Y?autoplay=1&start=161"
+      // video: "https://www.youtube.com/embed/6eq2wgakP5Y?autoplay=1&start=161"
+      video: "https://www.youtube.com/embed/hTsCgIkQoV0?start=103&autoplay=1"
     },
     {
         name: "Malm",
