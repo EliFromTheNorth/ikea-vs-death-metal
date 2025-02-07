@@ -8,8 +8,8 @@ export default function VerdictVideo() {
     const { currentItem } = location.state || {}
 
     return (
-        <Container>
-            <div className=" videoPlayer">
+        <Container fluid className="videoPlayer">
+            {/* <div className="videoPlayer"> */}
                 <div className="ratio ratio-16x9">
                     <iframe
                         src={currentItem.video}
@@ -19,7 +19,7 @@ export default function VerdictVideo() {
                         style={{ border: "none" }}
                 />
                 </div>
-            </div>
+            {/* </div> */}
         </Container>
     )
 }

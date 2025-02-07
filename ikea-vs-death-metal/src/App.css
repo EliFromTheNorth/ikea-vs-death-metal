@@ -161,7 +161,7 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  padding-top: 7vh;
+  padding-top: 30px;
   /* overflow: auto; */
 }
 
@@ -176,12 +176,12 @@
 }
 
 .videoPlayer {
-  position: relative;
+  /* position: relative; */
   /* display: flex;
   justify-content: center;
   align-items: center;
   flex-grow: 1; */
-  max-width: 80%;
+  max-width: 90vh;
   /* width: 80%; */
   margin: 0 auto;
 }
