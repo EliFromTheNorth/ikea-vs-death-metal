@@ -147,12 +147,6 @@
 
 /**************************  verdict page **************************/
 
-/* .container {
-  border: 10px solid pink;
-  max-width: 80rem;
-} */
-/* CHANGE TO FLUID CONTAINER TO OVERWRITE CONTAINER STYLES */
-
 .verdictContainer {
   width: 100vw;
   height: 100vh;
@@ -162,7 +156,6 @@
   align-items: center;
   box-sizing: border-box;
   padding-top: 30px;
-  /* overflow: auto; */
 }
 
 .verdictContainer > h1 {
@@ -176,13 +169,7 @@
 }
 
 .videoPlayer {
-  /* position: relative; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1; */
   max-width: 90vh;
-  /* width: 80%; */
   margin: 0 auto;
 }
 
@@ -195,6 +182,3 @@
   border: 0;
 }
 
-.button-next {
-  /* opacity: 0 */
-}
