@@ -152,10 +152,11 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 3vh;
+  padding-bottom: 2vh;
 }
 
 .verdictContainer > h1 {
@@ -165,7 +166,7 @@
 
 .verdictContainer > h2 {
   font-family: 'Metal Mania', sans-serif;
-  font-size: 7vh;
+  font-size: 5vh;
 }
 
 .videoPlayer {

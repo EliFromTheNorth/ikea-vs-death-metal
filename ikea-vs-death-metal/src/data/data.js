@@ -17,7 +17,8 @@ const data = [
         name: "Malm",
         // type: "Ikea",
         band: false,
-        image: "https://www.ikea.com/se/sv/images/products/malm-byra-med-3-lador-spegeleffekt__1305566_pe939534_s5.jpg"  },
+        image: "/images/Balungen.png"  
+      },
       {
         name: "Draconian",
         // type: "Metal Band",
