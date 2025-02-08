@@ -6,7 +6,7 @@ export default function verdictImage() {
     const { currentItem } = location.state || {}
 
     return (
-        <img src={currentItem.image}  alt="description" width="300" />
+        <img src={currentItem.image}  alt="description" className="ikea-image"/>
     )
 }
 
