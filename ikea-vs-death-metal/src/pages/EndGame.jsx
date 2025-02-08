@@ -38,7 +38,7 @@ export default function EndGame({state}) {
             <h1>Game Over</h1>
             <h2>{comment}</h2>
             <h2>Your Score: {score}/{data.length}</h2>
-            <button onClick={ handlePlayAgain }>Play again</button>
+            <button onClick={ handlePlayAgain } className="button-start">Play again</button>
         </>
     )
 }
