@@ -33,13 +33,17 @@ export default function EndGame({state}) {
     }
 
     return (
-        <>
+        <div className="end-game">
             <Confetti />
             <h1>Game Over</h1>
             <h2>{comment}</h2>
             <h2>Your Score: {score}/{data.length}</h2>
             <button onClick={ handlePlayAgain } className="button-start">Play again</button>
-        </>
+            <div className="contact-icons">
+                <img src="/images/GitHub.png"  alt="github icon" className="contact-icon"/>
+                <img src="/images/LinkedIn.png"  alt="github icon" className="contact-icon"/>
+            </div>
+        </div>
     )
 }
 

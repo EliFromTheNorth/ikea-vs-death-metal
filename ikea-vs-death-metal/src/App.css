@@ -186,3 +186,18 @@
   width: 50vh;
 }
 
+
+/**************************  end page **************************/
+
+.end-game {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  /* display: flex; */
+}
+
+.contact-icon {
+  width: 8%;
+  position: absolute;
+  bottom: 10px;
+}
