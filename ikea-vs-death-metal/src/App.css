@@ -193,11 +193,30 @@
   width: 100vw;
   height: 100vh;
   position: absolute;
-  /* display: flex; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.end-game h1 {
+  font-family: Metal Mania;
+  font-size: 17vh;
+}
+
+.end-game button {
+  height: 8vh;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
 }
 
 .contact-icon {
   width: 8%;
-  position: absolute;
-  bottom: 10px;
+  opacity: 1
+
 }
