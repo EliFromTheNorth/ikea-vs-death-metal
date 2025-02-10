@@ -38,7 +38,7 @@ export default function EndGame({state}) {
             <h1>Game Over</h1>
             <h2>Your Score: {score}/{data.length}</h2>
             <h2>{comment}</h2>
-            <button onClick={ handlePlayAgain } className="button-start">Play again</button>
+            <button onClick={ handlePlayAgain } className="main-button">Play again</button>
             <div className="contact-icons">
                 <a href="https://github.com/elifromthenorth" target="_blank" rel="noopener noreferrer">
                     <img src="/images/GitHub.png" alt="GitHub Profile" className="contact-icon"/>
@@ -53,8 +53,6 @@ export default function EndGame({state}) {
 
 // todo:
 // fix CSS
-// add github icon 
-// maybe even linked in icon?
 // comment in the end game in typing animation?
 //some nice styling - frame around the score
 // ikea picture - link to the product??
