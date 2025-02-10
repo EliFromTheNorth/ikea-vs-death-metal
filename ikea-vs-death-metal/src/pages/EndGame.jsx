@@ -38,7 +38,7 @@ export default function EndGame({state}) {
             <h1>Game Over</h1>
             <h2>Your Score: {score}/{data.length}</h2>
             <h2>{comment}</h2>
-            <button onClick={ handlePlayAgain } className="main-button">Play again</button>
+            <button className="main-button" onClick={handlePlayAgain}><span className="text" role="button">Play again</span></button>
             <div className="contact-icons">
                 <a href="https://github.com/elifromthenorth" target="_blank" rel="noopener noreferrer">
                     <img src="/images/GitHub.png" alt="GitHub Profile" className="contact-icon"/>
@@ -50,6 +50,8 @@ export default function EndGame({state}) {
         </div>
     )
 }
+
+
 
 // todo:
 // fix CSS
