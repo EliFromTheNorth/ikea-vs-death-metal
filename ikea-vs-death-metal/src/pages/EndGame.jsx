@@ -33,13 +33,14 @@ export default function EndGame({state}) {
     }
 
     return (
+        <div className="end-game-page">
         <div className="end-game">
             <Confetti />
             <h1>Game Over</h1>
             <h2>Your Score: {score}/{data.length}</h2>
             <h2>{comment}</h2>
             <button className="main-button" onClick={handlePlayAgain}><span className="text" role="button">Play again</span></button>
-            <div className="contact-icons">
+            <footer className="contact-icons">
                 <div className="image-wrapper">                    
                     <a href="https://github.com/elifromthenorth" target="_blank" rel="noopener noreferrer">
                         <img src="/images/GitHub.png" className="contact-icon" alt="GitHub Profile"/>
@@ -50,7 +51,8 @@ export default function EndGame({state}) {
                         <img src="/images/LinkedIn.png"  className="contact-icon" alt="LinkedIn Profile"/>
                     </a>
                 </div>
-            </div>
+            </footer>
+        </div>
         </div>
     )
 }
