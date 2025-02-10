@@ -37,8 +37,11 @@ export default function EndGame({state}) {
         <div className="end-game">
             <Confetti />
             <h1>Game Over</h1>
-            <h2>Your Score: {score}/{data.length}</h2>
-            <h2>{comment}</h2>
+            <div className="score">
+                <h3>SCORE</h3>
+                <h2>{score}/{data.length}</h2>
+            </div>
+            <h3>{comment}</h3>
             <button className="main-button" onClick={handlePlayAgain}><span className="text" role="button">Play again</span></button>
             <footer className="contact-icons">
                 <div className="image-wrapper">                    

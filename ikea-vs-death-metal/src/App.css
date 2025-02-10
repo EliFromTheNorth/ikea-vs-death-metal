@@ -1,7 +1,6 @@
 #root {
   margin: 0;
   padding: 0;
-  /* padding-top: 20px; */
   width: 100%;
   height: 100vh;
   text-align: center;
@@ -10,6 +9,7 @@
   overflow-x: hidden;
   overflow-y: auto;
   font-size: 30px;
+  font-family: 'Eczar', serif;
 }
 
 /************************** HOME PAGE **************************/
@@ -198,12 +198,31 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  /* border: 1px solid aqua; */
 }
 
 .end-game h1 {
-  font-family: Metal Mania;
+  font-family: "Metal Mania";
   font-size: 17vh;
+  background-image: url("/images/flag.jpg");
+  background-repeat: repeat;
+  background-size: contain;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.end-game h2 {
+  font-family: 'Metal Mania';
+  font-size: 3.5rem;
+  font-weight: bold;
+  width: fit-content;
+  padding: 1vh 3vw;
+  margin: 0 auto;
+}
+
+.end-game h3 {
+  font-size: 2.5rem;
 }
 
 .contact-icons {
@@ -213,23 +232,26 @@
   height: 10vh;
   padding: 2%;
   display: flex;
-  justify-content: end; /* Center the images horizontally */
-  align-items: center;     /* Center the images vertically */
-  gap: 1.5vw;      
+  justify-content: end; 
+  align-items: center;    
+  gap: 1em;      
   /* border: 2px solid purple;     */
   margin-bottom: 1%;
 }
 
 .image-wrapper {
-  max-width: 5vh;  
-  min-width: 3%;            
+  max-width: 4rem;  
+  min-width: 1rem;            
   height: auto;             
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden; 
-  padding: 1vh;
+  /* padding: 1vh;
+  margin: 1vh; */
   /* border: 1px solid yellow;        */
+  overflow: visible;
+
 }
 
 .contact-icon {
@@ -237,9 +259,11 @@
   height: 100%;
   object-fit: contain; 
   /* border: 1px solid green;   */
+  opacity: 0.6;
 }
 
 .contact-icon:hover {
-  width: 120%;
+  width: 140%;
   height: auto;
+  /* overflow: auto; */
 }
