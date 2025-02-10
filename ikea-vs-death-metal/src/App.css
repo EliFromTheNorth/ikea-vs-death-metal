@@ -201,19 +201,24 @@
   font-size: 17vh;
 }
 
-/* .end-game button {
-  height: 8vh;
-} */
-
 .contact-icons {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: fit-content;
+  justify-content: center; /* Center the images horizontally */
+  align-items: center;     /* Center the images vertically */
+  gap: 10px;               /* Optional: Adds space between images */
+}
+
+.image-wrapper {
+  width: 8vw;              /* Set width relative to the viewport width */
+  height: 8vw;             /* Set height equal to width for square aspect ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;        /* Ensures any overflow is hidden */
 }
 
 .contact-icon {
-  width: 8%;
-  opacity: 1
-
+  width: 100%;
+  height: 100%;
+  object-fit: contain;     /* Ensures the entire image fits within the bounds */
 }

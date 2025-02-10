@@ -40,12 +40,16 @@ export default function EndGame({state}) {
             <h2>{comment}</h2>
             <button className="main-button" onClick={handlePlayAgain}><span className="text" role="button">Play again</span></button>
             <div className="contact-icons">
-                <a href="https://github.com/elifromthenorth" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/GitHub.png" alt="GitHub Profile" className="contact-icon"/>
-                </a>
-                <a href="https://www.linkedin.com/in/eliska-knop-kostkova/" target="_blank" rel="noopener noreferrer">
-                    <img src="/images/LinkedIn.png"  alt="LinkedIn Profile" className="contact-icon"/>
-                </a>
+                <div className="image-wrapper">                    
+                    <a href="https://github.com/elifromthenorth" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/GitHub.png" className="contact-icon" alt="GitHub Profile"/>
+                    </a>
+                </div>
+                <div  className="image-wrapper">
+                    <a href="https://www.linkedin.com/in/eliska-knop-kostkova/" target="_blank" rel="noopener noreferrer">
+                        <img src="/images/LinkedIn.png"  className="contact-icon" alt="LinkedIn Profile"/>
+                    </a>
+                </div>
             </div>
         </div>
     )
