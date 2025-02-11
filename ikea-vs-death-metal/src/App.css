@@ -41,37 +41,16 @@
 }
 
 .metal-header {
-  /* background-image: url("/images/FlagBlack.jpg");
-  background-repeat: round;
-  background-size: cover;
-  background-position: 229px 53px;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 110%;
-  text-shadow: 6px 4px 17px #696969; */
   position: relative;
   font-size: 110%;
   background-image: url("/images/FlagBlack.jpg");
   background-repeat: round;
   background-size: cover;
   background-position: 229px 53px;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
-  -webkit-text-fill-color: transparent;
-}
-
-.metal-header::before {
-  content: attr(data-text);
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  font-size: 110%;
-  color: #696969; /* Shadow color */
-  filter: blur(17px);
-  transform: translate(6px, 4px);
+  filter: url(#text-shadow);
 }
 
 .main-button {

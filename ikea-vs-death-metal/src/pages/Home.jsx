@@ -26,10 +26,7 @@ export default function Home() {
       <div>
         <div className="home-container">
                <h1 className="game-title">
-                <span className="ikea-header">Ikea</span> 
-                <span className="vs">vs</span> 
-                <span className="metal-header" data-text="Death Metal">Death Metal</span>
-              </h1>
+                <span className="ikea-header">Ikea</span> <span className="vs">vs</span> <span className="metal-header" data-text="Death Metal">Death Metal</span></h1>
               <button onClick={handleStartGame} className="main-button" role="button"><span className="text">
                  Summon the Game
                    </span></button>
@@ -50,6 +47,16 @@ export default function Home() {
                 </p>          
                </div>
           </div>
+
+                      <svg width="0" height="0">
+              <defs>
+                <filter id="text-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="1" dy="1" stdDeviation="5" flood-color="#696969" />
+                </filter>
+              </defs>
+            </svg>
+
+
         </div>
     )
 }
