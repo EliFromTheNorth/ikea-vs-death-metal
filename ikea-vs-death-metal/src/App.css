@@ -217,7 +217,7 @@
 .end-game h1 {
   font-family: "Metal Mania";
   font-size: 17vh;
-  background-image: url("/images/flag.jpg");
+  background-image: url("/images/FlagBlack.jpg");
   background-repeat: repeat;
   background-size: contain;
   background-position: center;
@@ -228,7 +228,7 @@
 
 .end-game h2 {
   font-family: 'Metal Mania';
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: bold;
   width: fit-content;
   padding: 1vh 3vw;
