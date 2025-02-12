@@ -12,22 +12,19 @@
   font-family: 'Eczar', serif;
 }
 
-#root h1 {
-  margin: 0;
-}
 
 /************************** HOME PAGE **************************/
 
 .home-container {
-  padding-top: 7rem;
+  padding-top: 10vw;
   /* padding-top: 2vh; */
 }
 
 .game-title {
   font-family: 'Metal Mania', serif;
-  font-size: 10rem;
+  font-size: 10vw;
   /* font-size: 140px; */
-  margin-bottom: 0 0 45px 0;
+  margin: 0 auto 45px auto;
 }
 
 .ikea-header {
@@ -323,7 +320,11 @@
 
   .game-title {
     font-size: 4rem;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
+    /* overflow-wrap: break-word;
+    word-break: break-all;
+    white-space: nowrap; */
+    /* text-wrap: balance; */
   }
 
   /* .main-button {
@@ -332,7 +333,9 @@
   } */
 
   .home-text {
-    font-size: smaller;
+    font-size: 3vh;
+    padding: 3vh;
+
   }
 }
 
@@ -340,17 +343,18 @@
   .home-container {
     /* padding-top: 1rem; */
     margin: 0 auto;
+    
   }
   
   
   .game-title {
-    font-size: 2rem;
-    /* padding: 0 1rem; */
+    font-size: 7rem;
+    padding: 2rem 1rem;
 
   }
 
   .home-text {
-    font-size: smaller;
+    font-size: 4vh;
   }
 
   /* .main-button {
