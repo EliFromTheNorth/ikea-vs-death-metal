@@ -45,7 +45,7 @@ export default function EndGame({state}) {
             <button className="main-button" onClick={handlePlayAgain}><span className="text" role="button">Play again</span></button>
             <footer className="contact-icons">
                 <div className="image-wrapper">                    
-                    <a href="https://github.com/elifromthenorth" target="_blank" rel="noopener noreferrer">
+                    <a href="https://github.com/EliFromTheNorth/ikea-vs-death-metal" target="_blank" rel="noopener noreferrer">
                         <img src="/images/GitHub.png" className="contact-icon" alt="GitHub Profile"/>
                     </a>
                 </div>
