@@ -227,6 +227,7 @@
   -webkit-text-fill-color: transparent;
   color: transparent;
   filter: url(#text-shadow);
+  margin-bottom: 0;
 }
 
 
