@@ -30,11 +30,11 @@ export default function Home() {
               <button onClick={handleStartGame} className="main-button" role="button"><span className="text">
                  Summon the Game
                    </span></button>
-               <div className="home-text">
-                <p>
+               {/* <div> */}
+                <p className="home-text">
                     If you dare to.
                 </p>  
-                <p className="sound-info">
+                <p className="sound-info home-text">
                   🎵 This game comes with some epic tunes 🎸
                   <picture>
                     <source media="(min-width: )" srcset="" />
@@ -42,7 +42,7 @@ export default function Home() {
                   </picture><br />
                   🔊 For maximum enjoyment, make sure your <b>sound is ON</b> or grab some headphones! 🎧✨
                 </p>          
-               </div>
+               {/* </div> */}
           </div>
 
             <svg width="0" height="0">

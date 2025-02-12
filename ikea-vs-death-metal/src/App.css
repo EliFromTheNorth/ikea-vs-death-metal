@@ -12,17 +12,22 @@
   font-family: 'Eczar', serif;
 }
 
+#root h1 {
+  margin: 0;
+}
+
 /************************** HOME PAGE **************************/
 
 .home-container {
   padding-top: 7rem;
+  /* padding-top: 2vh; */
 }
 
 .game-title {
   font-family: 'Metal Mania', serif;
   font-size: 10rem;
   /* font-size: 140px; */
-  margin-bottom: 45px;
+  margin-bottom: 0 0 45px 0;
 }
 
 .ikea-header {
@@ -113,6 +118,9 @@
   position: absolute;
   bottom: 5rem;
   margin: 0 auto;
+  left: 0;
+  right: 0;
+  width: fit-content;
 }
 
 /*********************** GAME PAGE *************************/
@@ -328,16 +336,16 @@
   }
 }
 
-/* Styles for devices with a width between 601px and 1024px (e.g., tablets) */
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
   .home-container {
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
+    margin: 0 auto;
   }
   
   
   .game-title {
-    font-size: 6rem;
-    padding: 0 1rem;
+    font-size: 2rem;
+    /* padding: 0 1rem; */
 
   }
 
