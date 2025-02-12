@@ -337,6 +337,28 @@
     padding: 3vh;
 
   }
+
+  .item-name {
+    margin: 8vh 2vw 8vh 2vw;
+    font-size: clamp(3rem, 22vw, 5rem);
+  }
+
+  .game-buttons {
+    flex-direction: column;
+    max-width: fit-content;
+    justify-self: center;
+    row-gap: 3vh;
+  }
+
+  .button-band-image {
+    max-height: 23vh;
+    max-width:fit-content;
+  }
+
+  .button-ikea-image{
+    max-height: 23vh;
+    max-width:fit-content;
+  }
 }
 
 @media only screen and (min-width: 601px) and (max-width: 1024px) {
