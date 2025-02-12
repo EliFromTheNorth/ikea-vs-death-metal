@@ -64,6 +64,5 @@ export default function EndGame({state}) {
 
 // todo:
 // fix CSS
-// comment in the end game in typing animation?
 //some nice styling - frame around the score
 // ikea picture - link to the product??
