@@ -31,7 +31,7 @@ export default function Game() {
 
     return (
         <div className="game-container">
-          <h1 className="name">{currentItem.name}</h1>
+          <h1 className="item-name">{currentItem.name}</h1>
           <div className="game-buttons">
             <button className="button-game" onClick={() => handleButton("ikeaBtn")}>
               <img className="button-ikea-image" src="/images/IkeaBag.png" alt="ikea button"/>

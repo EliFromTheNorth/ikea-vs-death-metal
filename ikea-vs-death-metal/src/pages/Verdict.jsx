@@ -30,7 +30,7 @@ export default function Verdict({state}) {
   const updatedScore = correctAnswer ? score + 1 : score    
 
     return (
-        <div className="verdictContainer">
+        <div className="verdict-container">
             <h1>{correctAnswer ? "Hell YES!" : "Ouch..."}</h1>
             <h2> {currentItem.name} is {currentItem.band ? "a band" : "an ikea product"}!</h2>
             <br />
