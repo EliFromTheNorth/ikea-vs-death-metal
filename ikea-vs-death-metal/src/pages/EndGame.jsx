@@ -36,7 +36,7 @@ export default function EndGame({state}) {
         <div className="end-game-page">
         <div className="end-game">
             <Confetti />
-            <h1>Game Over</h1>
+            <h1 className="game-over" data-text="Game Over">Game Over</h1>
             <div className="score">
                 <h3>SCORE</h3>
                 <h2>{score}/{data.length}</h2>
@@ -55,7 +55,16 @@ export default function EndGame({state}) {
                     </a>
                 </div>
             </footer>
-        </div>
+         </div>
+
+         <svg width="0" height="0">
+              <defs>
+                <filter id="text-shadow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feDropShadow dx="1" dy="1" stdDeviation="5" flood-color="#696969" />
+                </filter>
+              </defs>
+            </svg>
+
         </div>
     )
 }
@@ -63,6 +72,5 @@ export default function EndGame({state}) {
 
 
 // todo:
-// fix CSS
-//some nice styling - frame around the score
-// ikea picture - link to the product??
+// fix CSS - responsivity
+// seeds

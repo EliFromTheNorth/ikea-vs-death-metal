@@ -215,6 +215,7 @@
 }
 
 .end-game h1 {
+  position: relative;
   font-family: "Metal Mania";
   font-size: 17vh;
   background-image: url("/images/FlagBlack.jpg");
@@ -224,7 +225,11 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  color: transparent;
+  filter: url(#text-shadow);
 }
+
+
 
 .end-game h2 {
   font-family: 'Metal Mania';

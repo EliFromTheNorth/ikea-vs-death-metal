@@ -48,7 +48,7 @@ export default function Home() {
                </div>
           </div>
 
-                      <svg width="0" height="0">
+            <svg width="0" height="0">
               <defs>
                 <filter id="text-shadow" x="-50%" y="-50%" width="200%" height="200%">
                   <feDropShadow dx="1" dy="1" stdDeviation="5" flood-color="#696969" />
