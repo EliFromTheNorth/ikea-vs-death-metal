@@ -34,10 +34,7 @@ export default function Home() {
                 <p>
                     If you dare to.
                 </p>  
-                <br />
-                <br />
-                <br />   
-                <p>
+                <p className="sound-info">
                   🎵 This game comes with some epic tunes 🎸
                   <picture>
                     <source media="(min-width: )" srcset="" />
