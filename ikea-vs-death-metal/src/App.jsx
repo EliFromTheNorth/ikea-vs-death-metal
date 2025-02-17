@@ -1,6 +1,7 @@
 import "./app.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Routes, Route, useNavigate} from "react-router-dom"
+import Intro from "./pages/intro"
 import Home from "./pages/home"
 import Game from "./pages/game"
 import EndGame from "./pages/endGame"
@@ -13,7 +14,8 @@ function App() {
       <div>
           <Fog />
           <Routes>
-            <Route path ="/" element={<Home />}/>
+            <Route path ="/" element={<Intro />}/>
+            <Route path ="/home" element={<Home />}/>
             <Route path="/game" element={<Game />} />
             <Route path="/endGame" element={<EndGame />} />
             <Route path="/verdict" element={<Verdict />} />
