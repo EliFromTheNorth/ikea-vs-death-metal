@@ -10,7 +10,7 @@ export default function EndGame({state}) {
     const { score } = location.state || {}
     
     const handlePlayAgain = () => {
-        navigate("/")
+        navigate("/home")
     }
 
     let comment = ""
@@ -69,8 +69,3 @@ export default function EndGame({state}) {
     )
 }
 
-
-
-// todo:
-// fix CSS - responsivity
-// seeds
