@@ -1,120 +1,80 @@
 const data = [
     {
-      name: "Kallax",
-      // type: "Ikea",
-      band: false,
-      image: "https://www.ikea.com/se/sv/images/products/kallax-hylla-med-underrede-svartbrun-svart__1041383_pe840975_s5.jpg",
-    },
-    {
-      name: "Behemoth",
-      // type: "Metal Band",
+      name: "Svartby",
       band: true,
-      image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/BehemothBAND.jpg/800px-BehemothBAND.jpg",
-      // video: "https://www.youtube.com/embed/6eq2wgakP5Y?autoplay=1&start=161"
       video: "https://www.youtube.com/embed/hTsCgIkQoV0?start=103&autoplay=1"
     },
     {
-        name: "Malm",
-        // type: "Ikea",
+      name: "Dååth",
+      band: true,
+      video: "https://www.youtube.com/embed/pn_aQwQUs2M?start=122&autoplay=1"
+    },
+    {
+      name: "Konkhra",
+      band: true,
+      video: "https://www.youtube.com/embed/04DAPjN9Dyo?start=121&autoplay=1"
+    },    
+    {
+      name: "Myrkskog",
+      band: true,
+      video: "https://www.youtube.com/embed/QPfuUdBPIck?start=64&autoplay=1"
+    },    
+    {
+      name: "Rudra",
+      band: true,
+      video: "https://www.youtube.com/embed/5NDuUucCm-0?start=127&autoplay=1"
+    },   
+    {
+      name: "Hollenthon",
+      band: true,
+      video: "https://www.youtube.com/embed/aaHrB4hLVg8?start=121&autoplay=1"
+    },    
+    {
+      name: "Naglfar",
+      band: true,
+      video: "https://www.youtube.com/embed/eQcLWjHnBp0?start=127&autoplay=1"
+    },    
+    // {
+    //   name: "",
+    //   band: true,
+    //   video: ""
+    // },
+    {
+        name: "Balungen",
         band: false,
         image: "/images/Balungen.png"  
       },
       {
-        name: "Draconian",
-        // type: "Metal Band",
-        band: true,
-        image: "https://draconianofficial.com/wp-content/uploads/279900458_533449861475810_2129518615662149303_n-e1651691656773.jpeg",
-        video: "https://www.youtube.com/embed/Vna8j585rbw?autoplay=1&start=561"
+        name: "Rocksjön",
+        band: false,
+        image: "/images/Rocksjön.png"  
+      },
+      {
+        name: "Mörtfors",
+        band: false,
+        image: "/images/Mörtfors.png"  
+      },      {
+        name: "Mariatheres",
+        band: false,
+        image: "/images/Mariatheres.png"  
+      },      {
+        name: "Flundra",
+        band: false,
+        image: "/images/Flundra.png"  
+      },      {
+        name: "Mudderverk",
+        band: false,
+        image: "/images/Mudderverk.png"  
+      },      {
+        name: "Dragan",
+        band: false,
+        image: "/images/Dragan.png"  
+      },      {
+        name: "Hauga",
+        band: false,
+        image: "/images/Hauga.png"  
       },
   ];
   
   export default data;
 
-
-
-
-// const data = [
-//     {
-//       name: "",
-//       type: "Ikea",
-//       image: "",
-//     },
-//     {
-//         name: "",
-//         type: "Ikea",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Ikea",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Ikea",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Ikea",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Ikea",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Ikea",
-//         image: "",
-//       },
-
-//     {
-//       name: "",
-//       type: "Band",
-//       image: "",
-//         },
-//     {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//       {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//       {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//       {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//     {
-//         name: "",
-//         type: "Band",
-//         image: "",
-//       },
-//   ];
-  
-//   export default data;
