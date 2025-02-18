@@ -18,7 +18,7 @@ export default function Intro() {
     };
   }, [navigate]);
 
-  const text = `Deep in the dark Scandinavian forest, where legends are forged in fire and ice, words take on a life of their own. Some echo through the abyss of death metal, others rest upon the altars of IKEA. Fifteen titles will be revealed to you. Only by trusting your instincts can you uncover their true origins. But beware—appearances can be deceiving. Choose wisely. Press ENTER to continue.`;
+  const text = `Deep in the dark Scandinavian forest, where legends are forged in fire and ice, words take on a life of their own. Some echo through the abyss of death metal, others rest upon the altars of IKEA. Fifteen titles will be revealed to you. Only by trusting your instincts can you uncover their true origins. But beware—appearances can be deceiving. Choose wisely.`;
 
   const wrapWordsInSpans = (text) => {
     const words = text.split(' ');
@@ -35,6 +35,9 @@ export default function Intro() {
     <div className="intro-container">
       <p className="intro-text">
         {wrapWordsInSpans(text)}
+      </p>
+      <p className="text-enter">
+        {wrapWordsInSpans("Brace yourself… then press ENTER")}
       </p>
     </div>
   );
