@@ -1,6 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom"
 import data from "../data/data"
-import Confetti from "../components/confetti"
+import Confetti from "../components/Confetti"
 
 
 export default function EndGame({state}) {
