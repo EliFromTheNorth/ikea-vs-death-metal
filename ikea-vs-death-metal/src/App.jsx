@@ -1,4 +1,4 @@
-import "./app.css"
+import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Routes, Route, useNavigate} from "react-router-dom"
 import Intro from "./pages/intro"
