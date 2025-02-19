@@ -1,11 +1,11 @@
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import {Routes, Route, useNavigate} from "react-router-dom"
-import Intro from "./pages/intro"
-import Home from "./pages/home"
-import Game from "./pages/game"
-import EndGame from "./pages/endGame"
-import Verdict from "./pages/verdict"
+import Intro from "./pages/Intro"
+import Home from "./pages/Home"
+import Game from "./pages/Game"
+import EndGame from "./pages/EndGame"
+import Verdict from "./pages/Verdict"
 import Fog from "./components/Fog";
 
 
