@@ -11,10 +11,18 @@ export default function Intro() {
       }
     };
 
-    window.addEventListener('keydown', handleKeyPress);
+    const handleClick = () => {
+      navigate('/home');
+    };
 
+    window.addEventListener('keydown', handleKeyPress);
+    window.addEventListener('click', handleClick);
+
+    
     return () => {
       window.removeEventListener('keydown', handleKeyPress);
+      window.removeEventListener('click', handleClick);
+
     };
   }, [navigate]);
   
