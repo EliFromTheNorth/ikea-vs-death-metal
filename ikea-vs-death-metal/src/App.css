@@ -409,6 +409,7 @@
   .end-game h1 {
     font-size: 12vh;
     padding: 0 1vh;
+    margin: 0;
   }
 
   .end-game h2 {
