@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 export default function Intro() {
@@ -17,6 +17,14 @@ export default function Intro() {
       window.removeEventListener('keydown', handleKeyPress);
     };
   }, [navigate]);
+  
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768)
+  }, []);
+  
+  const enterText = isMobile ? "tap anywhere" : "press ENTER"
+
 
   const text = `Deep in the dark Scandinavian forest, where legends are forged in fire and ice, words take on a life of their own. Some echo through the abyss of death metal, others rest upon the altars of IKEA. Fifteen titles will be revealed to you. Only by trusting your instincts can you uncover their true origins. But beware—appearances can be deceiving. Choose wisely.`;
 
@@ -29,6 +37,7 @@ export default function Intro() {
     ));
   };
 
+
   
 
   return (
@@ -37,7 +46,7 @@ export default function Intro() {
         {wrapWordsInSpans(text)}
       </p>
       <p className="text-enter">
-        {wrapWordsInSpans("Brace yourself… then press ENTER")}
+        {wrapWordsInSpans(`Brace yourself… then ${enterText}`)}
       </p>
     </div>
   );
