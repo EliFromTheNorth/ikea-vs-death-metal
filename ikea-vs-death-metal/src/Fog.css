@@ -1,15 +1,7 @@
-/*  
+ 
   html, body {
     overflow: hidden;
-  } */
-
-  /*  TESTING MOBILE SCREEN */
-  html, body, .fogwrapper {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
   }
-  
 
   h1 {
     margin: 0;
@@ -17,26 +9,17 @@
   
   /* ---------- Fog ---------- */
   .fogwrapper {
-    width: 100vw; /*  TESTING MOBILE SCREEN */
-    height: 100vh; /*  TESTING MOBILE SCREEN */
-    overflow: hidden; /*  TESTING MOBILE SCREEN */
-    position: fixed; /*  TESTING MOBILE SCREEN */
-    top: 0;/*  TESTING MOBILE SCREEN */
-    left: 0;/*  TESTING MOBILE SCREEN */
-
-    /* height: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
-    width: 100%; */
+    width: 100%;
     -webkit-filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
     filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
   }
-
   #foglayer_01, #foglayer_02, #foglayer_03 {
     height: 100%;
     position: absolute;
     width: 200%;
-
     pointer-events: none;
   }
   #foglayer_01 .image01, #foglayer_01 .image02,
@@ -45,13 +28,7 @@
     float: left;
     height: 100%;
     width: 50%;
-    /*  TESTING MOBILE SCREEN */
-    background-size: contain; /* or try '100% 100%' OR COVER */
   }
-
-
-
-
   #foglayer_01 {
     -webkit-animation: foglayer_01_opacity 30s linear infinite, foglayer_moveme 35s linear infinite;
     -moz-animation: foglayer_01_opacity 30s linear infinite, foglayer_moveme 35s linear infinite;
@@ -190,17 +167,9 @@
   @media only screen
     and (min-width: 280px)
     and (max-width: 767px) {
- /*  TESTING MOBILE SCREEN */
-      #foglayer_01, #foglayer_02, #foglayer_03 {
-        /* width: 100vw;
-        height: 100vh; */
-        width: 200%;
-      } /*  TESTING MOBILE SCREEN */
-
       #foglayer_01 .image01, #foglayer_01 .image02,
       #foglayer_02 .image01, #foglayer_02 .image02,
       #foglayer_03 .image01, #foglayer_03 .image02 {
         width: 100%;
-        height: 100%;     /*  TESTING MOBILE SCREEN */
       }
     }
