@@ -403,6 +403,23 @@
   .ikea-image {
     width: 15rem;
   }
+
+  .end-game h1 {
+    font-size: 12vh;
+    padding: 0 1vh;
+  }
+
+  .end-game h2 {
+    font-size: 3rem;
+  }
+
+  .end-game h3 {
+    font-size: 1.5rem;
+  }
+
+  .image-wrapper {
+    max-width: 3rem;
+  }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
