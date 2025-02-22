@@ -31,11 +31,10 @@ export default function Game() {
       })
   }
 
-  const remainingQuestions = data.length - remainingItems.length
+  const remainingQuestions = data.length - remainingItems.length + 1
 
     return (
         <div className="game-container">
-          <p className="remaining-questions">{remainingQuestions}/{data.length}</p>
           <h1 className="item-name">{currentItem.name}</h1>
           <div className="game-buttons">
             <button className="button-game" onClick={() => handleButton("ikeaBtn")}>
@@ -44,6 +43,9 @@ export default function Game() {
             <button className="button-game" onClick={() => handleButton("bandBtn")}>
               <img className="button-band-image" src="/images/Angel.jpg" alt="metal button"/>
             </button>
+            <div className="remaining-questions">
+              <p>Assembly Progress: {remainingQuestions} of {data.length}</p>
+            </div>
           </div>
 
         </div>
