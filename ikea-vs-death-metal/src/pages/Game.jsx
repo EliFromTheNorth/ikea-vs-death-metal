@@ -1,5 +1,7 @@
 import { useNavigate, useLocation, } from "react-router-dom"
 import { useState, useEffect } from "react"
+import data from "../data/data"
+
 
 
 export default function Game() {
@@ -29,8 +31,11 @@ export default function Game() {
       })
   }
 
+  const remainingQuestions = data.length - remainingItems.length
+
     return (
         <div className="game-container">
+          <p className="remaining-questions">{remainingQuestions}/{data.length}</p>
           <h1 className="item-name">{currentItem.name}</h1>
           <div className="game-buttons">
             <button className="button-game" onClick={() => handleButton("ikeaBtn")}>

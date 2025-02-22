@@ -172,6 +172,10 @@
   padding-top: 7vh;
 }
 
+.remaining-questions {
+  font-family: 'Metal Mania', sans-serif;
+}
+
 .item-name {
   font-size: clamp(6rem, 10vw, 140px);
   font-family: 'Metal Mania', serif;
