@@ -123,7 +123,7 @@
   white-space: nowrap;
   cursor: pointer;
   margin: 0 auto;
-  /* position: relative; */
+  position: relative;
   z-index: 2;
   }
 
@@ -133,7 +133,7 @@
 }
 
 .main-button span {
-  background-color: #1D1D2D;
+  background-color: #272734;
   padding: 10px 15px;
   border-radius: 6px;
   width: 100%;
