@@ -24,6 +24,11 @@
     filter: blur(1px) grayscale(0.2) saturate(1.2) sepia(0.2);
   }
 
+  /* button {
+    position: relative;
+    z-index: 2; 
+} */
+
   #foglayer_01, #foglayer_02, #foglayer_03 {
     height: 100%;
     position: absolute;
