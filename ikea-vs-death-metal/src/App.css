@@ -175,9 +175,8 @@
 .remaining-questions {
   font-family: 'Metal Mania', sans-serif;
   position: absolute;
-  bottom: 5rem;
+  bottom: 4rem;
   font-size: clamp(1rem, 2.5rem, 3rem);
-  border: 5px solid pink;
 }
 
 .item-name {
