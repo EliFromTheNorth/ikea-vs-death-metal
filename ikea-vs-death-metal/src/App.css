@@ -177,7 +177,7 @@
   position: absolute;
   bottom: 5rem;
   font-size: clamp(1rem, 2.5rem, 3rem);
-  /* margin: 0 auto */
+  border: 5px solid pink;
 }
 
 .item-name {
@@ -211,14 +211,14 @@
 .button-band-image {
   border-radius: 20px;
   width: 100%;
-  max-width: 17rem;
+  max-width: 16rem;
   height: auto;
 }
 
 .button-ikea-image {
   border-radius: 20px;
   width: 100%;
-  max-width: 22rem;
+  max-width: 21rem;
   height: auto;
 }
 
