@@ -243,7 +243,9 @@
 .videoPlayer {
   max-width: 90vh;
   margin: 0 auto;
-}
+  position: relative;
+  bottom: 5vh;
+  }
 
 .videoPlayer iframe {
   position: absolute;
@@ -256,6 +258,13 @@
 
 .ikea-image {
   width: 50vh;
+  position: relative;
+  bottom: 6vh;
+}
+
+.next-button {
+  position: absolute;
+  bottom: 5vh;
 }
 
 
