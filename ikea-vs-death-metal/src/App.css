@@ -395,7 +395,7 @@
   }
 
   .item-name {
-    margin: 4vh 2vw 8vh 2vw;
+    margin: 4vh 2vw 6vh 2vw;
     font-size: clamp(3rem, 4rem, 5rem);
   }
 
@@ -407,7 +407,7 @@
   }
 
   .button-band-image {
-    max-height: 23vh;
+    max-height: 22vh;
     max-width:fit-content;
   }
 
